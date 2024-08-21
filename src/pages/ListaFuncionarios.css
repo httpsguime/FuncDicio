@@ -1,0 +1,75 @@
+.page-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .funcionario-item {
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center; 
+    border: 1px solid #e0e0e0;
+  }
+  
+  .funcionario-item img {
+    max-width: 100px; /* Define a largura máxima da imagem */
+    max-height: 100px; /* Define a altura máxima da imagem */
+    width: auto; /* Ajusta a largura automaticamente */
+    height: auto; /* Ajusta a altura automaticamente */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 50%; /* Faz com que a imagem seja exibida como um círculo */
+    margin-right: 20px;
+  }
+  
+  .funcionario-item .info {
+    flex: 1;
+  }
+  
+  .funcionario-item .info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .funcionario-item .info p {
+    margin: 4px 0;
+    color: #666;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .no-funcionarios {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  @media (max-width: 600px) {
+    .funcionario-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .funcionario-item img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+  
